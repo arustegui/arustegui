@@ -1,0 +1,65 @@
+<DOCTYPE! html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic html layout example</title>
+    <link rel="stylesheet" href="../css/styleCar.css">
+</head>
+
+<body class="agrupar">
+
+    <header class="header">
+    <h1>Autos Model</h1>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Autos</li>
+            <li>Ayuda</li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <article>
+            <hgroup>
+                <h1>Titulo del primer articulo</h1>
+                <h2>Titulo del segundo articulo</h2>
+            </hgroup>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, rerum?</p>
+        </article>
+        <article>
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, temporibus.</p>
+        </article>
+    </section>
+    <h2>Descuento de autos</h2>
+
+    &nbsp;
+    <div class="aside">
+        Largo: <input type="text" id="contadorMarca" placeholder="Saber largo de la marca...">
+        <button type="button" id="btnLargo">Pulsá</button>
+    </div>
+
+    &nbsp;
+
+    <div class="aside">
+        Marca: <input type="text" id="marcaCarro" placeholder="Escribí una marca...">
+        Modelo: <input type="text" id="modeloCarro" placeholder="Escribí una marca...">
+        <button type="button" id="btnAutos">Pulsá</button>
+    </div>
+    
+    <div id="mostrarTexto"> </div>
+    <div id="marcaCarro"> </div>
+    <div id="mensajeAutos"> </div>
+
+
+
+    <footer class="foot">
+        Derechos Reservados 2020 - 2021
+    </footer>
+    <script type="text/javascript" src="../js/appCar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<DOCTYPE! html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Basic html layout example</title>
+    <link rel="stylesheet" href="../css/styleTime2.css">
+    <script type="text/javascript" src="../js/appTime2.js"></script>
+</head>
+
+<body class="reloj">
+
+    <header class="header">
+    <h1>Time Machine</h1>
+    </header>
+
+    <div id="contenedor">
+        <div id="clock">00:00:00:00</div>
+		<input type="button" class="boton" id="inicio" value="Start &#9658;" onclick="inicio();">
+		<input type="button" class="boton" id="parar" value="Stop &#8718;" onclick="parar();" disabled>
+		<input type="button" class="boton" id="continuar" value="Resume &#8634;" onclick="inicio();" disabled>
+		<input type="button" class="boton" id="reinicio" value="Reset &#8635;" onclick="reinicio();" disabled>
+	</div>
+
+ <!-- <footer class="foot">
+        Derechos Reservados 2020 - 2021
+    </footer> -->
+</body>
+
+</html>
