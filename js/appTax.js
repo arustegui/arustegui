@@ -15,18 +15,21 @@ function getValue(id){
     return element.value;
 }
 
-function masIva(precio, iva){
-    let = iva || 21
-    let coniva = (precio + precio*iva/100);
-    return coniva;
+function masIva(precio, iva, taxUno, taxDos){
+  let iva = 21;
+  let taxUno = 30;
+  let taxDos = 35;
+  let coniva = (precio + taxUno * iva / 100);
+  return coniva;
   }
-  let precio = parseInt(prompt("Introduce un precio")); 
-  let iva = parseInt(prompt("Introduce el iva"));
-  if(iva > 0){
-    let resultado = masIva(precio, iva);
+
+  let precio = ("Introduce un precio")); 
+  let iva = ("Introduce el iva"));
+  if (iva > 0) {
+  let resultado = masIva(precio, iva);
   }
-  else{
-    let resultado = masIva(precio);
+  else {
+  let resultado = masIva(precio);
   }
   document.write("Precio sin iva: " + precio);
-  document.write("<br>Precio más Iva: " + resultado);
+  document.write("Precio más Iva: " + resultado);  
