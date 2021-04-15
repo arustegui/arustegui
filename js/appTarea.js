@@ -1,4 +1,5 @@
 let logOn = true;
+const articulos = [];
 
 function log(parametro) {
     if (logOn === true) {
@@ -17,33 +18,24 @@ function getValue(id) {
 
 function init() {
     log('iniciando elementos JS');
+    const agregar = getElement('agregar');
+    agregar.addEventListener('click', agregarArticulo);
 }
 
-const inputArt = getElement('inputArt');
+function agregarArticulo() {
+    const input = getElement('inputArticulo');
+    const valor = input.value;
+    log(`El valor es ${valor}`);
+    articulos.push(valor);
+    agregarFila(valor);
+    
+}
 
-function tabla() {
-    const btn = getElement('btn');
-    btn.addEventListener('click', consola);
-    const arrayArt = [];
-    console.log('consola');
-} 
+function agregarFila(valor) {
+    log(`agregar la variable ${valor}`);
+}
+
+init();
 
 
-
-// function artArrayInput(){
-//     const arrayInput = new Array();
-//     const inputValue = document.getElementById('artInput');
-//         artValues = [].array.forEach(inputValue, function(dataInput) {
-//          arrayInput.push(dataInput.value);
-//      });
-//      return;
-// }
-
-// -- DATE --
-// function date(){
-//     const fecha = new Date();
-//     document.getElementById("date").innerHTML = fecha;
-// }
-
-init ();
 
