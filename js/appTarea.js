@@ -29,6 +29,7 @@ function agregarArticulo() {
     articulos.push(valor);
     agregarFila(valor);
     
+    
 }
 
 function agregarFila(valor) {

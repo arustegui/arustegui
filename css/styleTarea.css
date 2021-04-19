@@ -334,3 +334,6 @@
   
   }
   
+  input[type=submit] {
+    background-color: #b1ce42;
+  }
